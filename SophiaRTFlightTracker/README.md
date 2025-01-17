@@ -18,3 +18,7 @@
 
 4. Configurer les clées d'API
     - Mettre une clée d'API Google Maps Platform dans le fichier AndroidManifest.xml
+    - Modifier la clée d'API du serveur dans l'url présent dans le fichier FlightActivity.java
+  
+5. Configurer l'adresse IP du serveur
+   - Modifier l'adresse IP du serveur dans l'url présent dans le fichier FlightActivity.java
