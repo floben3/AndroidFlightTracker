@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sophia R&amp;T Flight Tracker</string>
+    <string name="sophia_r_amp_t_flight_tracker"><![CDATA[Sophia R&T Flight Tracker]]></string>
+    <string name="par_aeroports">Par Aéroports</string>
+    <string name="par_numero_de_vol">Par Numéro de Vol</string>
+    <string name="aeroport_de_depart">Aéroport de départ</string>
+    <string name="aeroport_d_arrivee">Aéroport d\'arrivée</string>
+    <string name="numero_de_vol">Numéro de vol</string>
+    <string name="afficher_les_vols">Afficher les vols</string>
+</resources>

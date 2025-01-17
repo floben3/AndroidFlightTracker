@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="2dp"
+    android:background="#F5F5F5"
+    android:elevation="2dp">
+
+    <!-- Numéro de vol -->
+    <TextView
+        android:id="@+id/flightNumberAndAircraftRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numéro de vol  |  Numéro d'avion"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <!-- Compagnie aérienne -->
+    <TextView
+        android:id="@+id/airlineAndAircraftIata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Compagnie aérienne | Modèle d'avion"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Aéroport de départ -->
+            <TextView
+                android:id="@+id/departureAirport"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Aéroport de départ"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/departureDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="Date de départ"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Heure de départ prévue -->
+                <TextView
+                    android:id="@+id/scheduledDepartureTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:text="Départ\nprévu"
+                    android:textSize="14sp" />
+
+                <!-- Heure de départ estimée -->
+                <TextView
+                    android:id="@+id/estimatedDepartureTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Départ\nestimé"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- Terminal de départ -->
+            <TextView
+                android:id="@+id/departureTerminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terminal"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Aéroport d'arrivée -->
+            <TextView
+                android:id="@+id/arrivalAirport"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Aéroport d'arrivée"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/arrivalDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="Date de d'arrivée"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Heure d'arrivée prévue -->
+                <TextView
+                    android:id="@+id/scheduledArrivalTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:text="Arrivée\nprévu"
+                    android:textSize="14sp" />
+
+                <!-- Heure d'arrivée estimée -->
+                <TextView
+                    android:id="@+id/estimatedArrivalTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="Arrivée\nestimée"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <!-- Terminal d'arrivée -->
+            <TextView
+                android:id="@+id/arrivalTerminal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:text="Terminal"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lastUpdated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Emplacement à la date de mise à jour"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+</LinearLayout>
