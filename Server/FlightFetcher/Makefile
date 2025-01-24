@@ -4,9 +4,7 @@ compile:
 	javac -cp "src:lib/*" -d bin src/FlightFetcher.java
 
 # Execution avec parametres
-run: 
-	clean
-	compile
+run:
 	java -cp "bin:lib/*" FlightFetcher $(ARGS)
 
 # Nettoyage
